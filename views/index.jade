@@ -1,0 +1,52 @@
+extends layout
+
+block content
+    header(class='landing-header')
+        img(src='images/banner-image.jpg')
+        div(class='arrow-down')
+            a(href="#content")
+                img(src="images/arrow-down.png")
+                p(class='show-more') Show More
+    section#content
+        h1 Welcome to Boni's Kitchen
+        p 
+            | Step into Boni's Kitchen, where every dish tells a story and every meal is an experience.
+            | Embrace the art of culinary excellence and embark on a journey of flavors, creativity, and warm hospitality.
+            | Welcome to a world where food is not just a meal, but a cherished memory in the making.
+
+        h2 What we offer
+        p Boni's Kitchen is your destination for culinary excellence. Explore our range of services and offerings:
+
+        .services-container
+            .service-item
+                img(src="images/delivery.jpg", alt="Service 1")
+                p
+                    b Special Orders:
+                    |  Order custom dishes for special occasions, like birthday cakes and more.
+            .service-item
+                img(src="images/training.jpg", alt="Service 2")
+                p
+                    b Personal Training:
+                    |  Enhance your cooking skills with personalized training from Chef Boni.
+            .service-item
+                img(src="images/outside-catering.jpg", alt="Service 3")
+                p
+                    b Outside Catering:
+                    |  Let us cater your events with our delectable creations.
+
+        h2 Gallery
+        p Take a look at some of our culinary creations and memorable moments from our events and training sessions:
+            // Add your image gallery here
+
+        h2 About Chef Boni
+        p
+            | Chef Boni is a seasoned culinary expert with a passion for sharing the art of cooking and hospitality.
+            | With years of experience and numerous achievements in the field, Chef Boni is here to guide you on your culinary journey.
+
+        h2 Contact Us
+        p Have questions or ready to place an order? Feel free to get in touch with us:
+
+        .contact-info
+            p Email: chefboni@example.com
+            p Phone: +123-456-7890
+            p Address: 123 Food Street, Culinary Town

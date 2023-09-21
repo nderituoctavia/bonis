@@ -1,0 +1,360 @@
+/* Reset some default styles */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Mooli';
+}
+
+/* Style the navigation menu */
+.navbar {
+  background-color: #106b6b;
+  color: #92f8ea;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar h1 {
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 2px;
+  width: 20px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: transform 0.3s;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Style the Landing Page header */
+.landing-header {
+  position: relative;
+}
+
+.landing-header img {
+  width: 100%;
+  height: auto;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow-down a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.arrow-down img {
+  width: 40px;
+  height: 40px;
+  animation: bounce 2s infinite;
+}
+
+.show-more {
+  font-size: 20px;
+  margin-top: 5px;
+  color: rgb(1, 22, 22);
+}
+
+/* Additional Content Styles */
+.hidden-content {
+  display: none;
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.hidden-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Add styles for services */
+.services-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-item {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+}
+
+.service-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Contacts Page Styles */
+.contacts-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.left-column, .right-column {
+  flex: 1;
+}
+
+.contact-details, .social-handles {
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-details h2, .social-handles h2 {
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+}
+
+.social-handles ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-handles li {
+  margin-bottom: 5px;
+}
+
+.contact-form {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.contact-form h2 {
+  margin-bottom: 10px;
+}
+
+.contact-form label, .contact-form textarea, .contact-form input[type="email"], .contact-form input[type="text"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #106b6b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Profile Page Styles */
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.profile-text {
+  flex: 1;
+}
+
+.profile-image {
+  max-width: 400px;
+  margin-left: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.profile-category {
+  margin-bottom: 30px;
+}
+
+.profile-category h2 {
+  margin-bottom: 10px;
+}
+
+.profile-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-category li {
+  margin-bottom: 5px;
+}
+
+#content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.recipe-section {
+  max-width: 1200px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.recipe {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.recipe h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.recipe p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Add animations */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-10px);
+  }
+}
+
+/* Media query for mobile view */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+      display: flex;
+      cursor: pointer;
+  }
+
+  .menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 70%;
+      background-color: #08424d;
+      flex-direction: column;
+      padding-top: 60px;
+      transition: transform 0.3s;
+  }
+
+  .menu.active {
+      transform: translateX(0);
+  }
+
+  .menu a {
+      font-size: 20px;
+      margin-bottom: 20px;
+  }
+
+  /* Adjust styles for contact page on mobile view */
+  .contacts-section {
+      flex-direction: column;
+      margin: 50px auto;
+  }
+
+  .left-column, .right-column {
+      width: 100%;
+  }
+
+  .contact-details, .social-handles, .contact-form {
+      margin-bottom: 40px;
+  }
+
+  /* Adjust styles for profile page on mobile view */
+  .profile-section {
+      flex-direction: column-reverse;
+
+  }
+
+  .profile-image {
+      margin-left: 0;
+      margin-bottom: 20px;
+  }
+
+  .profile-category ul {
+      padding-left: 20px;
+  }
+  #content {
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  .arrow-down {
+      visibility: hidden;
+  }
+
+  .services-container {
+      flex-direction: column;
+  }
+  .recipe-section {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+}
+

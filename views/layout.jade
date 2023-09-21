@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title= "Boni's Kitchen"
+    link(rel='stylesheet', href='stylesheets/style.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Mooli')
+  body
+    nav(class='navbar')
+      div(class='menu-toggle')
+        span
+        span 
+        span 
+      div 
+        img(height='40' src='images/logo1.png')
+      ul(class='menu')
+        li
+          a(href='/') Home
+        li
+          a(href='/recipes') Recipes
+        li
+          a(href='/orders') Orders
+        li
+          a(href='/services') Services
+        li
+          a(href='/gallery') Gallery
+        li
+          a(href='/team') Team
+        li
+          a(href='/contacts') Contacts
+    block content

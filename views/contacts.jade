@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    section.contacts-section#contacts
+    .left-column
+        // Contact Details
+        .contact-details
+            h2 Contact Details
+            p Phone: +123-456-7890
+            p Email: chefboni@example.com
+            p Address: 123 Food Street, Culinary Town
+
+        // Social Handles
+        .social-handles
+            h2 Social Handles
+            ul
+                li: a(href='#') Facebook
+                li: a(href='#') Instagram
+                li: a(href='#') Twitter
+
+    .right-column
+        // Contact Form
+        .contact-form
+            h2 Contact Form
+            form(action='#', method='post')
+                label(for='name') Name:
+                input(type='text', id='name', name='name', required)
+                br
+
+                label(for='email') Email:
+                input(type='email', id='email', name='email', required)
+                br
+
+                label(for='message') Message:
+                br
+                textarea(id='message', name='message', rows='4', cols='50', required)
+                br
+
+                input(type='submit', value='Submit')
